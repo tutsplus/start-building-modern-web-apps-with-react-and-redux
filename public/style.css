@@ -1,0 +1,260 @@
+html, body, #root, .app {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.btn, button {
+    border: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f1f1f1));
+    padding: 0 13px;
+    margin: 0 13px 0 0;
+    border-radius: 3px;
+    color: rgba(35, 31, 32, 0.8);
+    height: 22px;
+    box-shadow: 0 0.5px 0.05px rgba(0, 0, 0, 0.4), 0 -0.5px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    font-size:11px;
+    line-height: 22px;
+}
+
+.btn:focus, button:focus {
+    outline:none;
+}
+
+.btn:active, button:active {
+    background: #e7e7e7;
+}
+
+button.delete {
+    float: right;
+    margin: 0;
+}
+
+.toolbar {
+    background-image: -webkit-linear-gradient(#ececec 0%, #ececec 1.9%, #e9e9e9 2%, #d2d2d2 100%);
+    color: #434648;
+    height: 37px;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.toolbar div:first-child {
+    box-sizing: border-box;
+    padding: 7.5px;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.toolbar div:last-child {
+    box-sizing: border-box;
+    padding: 7.5px;
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+
+.sidebar {
+    background: #f6f7f8;
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+    height: calc(100% - 37px);
+    width: 20%;
+    padding: 25px;
+    float: left;
+}
+
+.sidebar h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(35, 31, 32, 0.5);
+    letter-spacing: -0.2px;
+    line-height: 18px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 5px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: rgba(35, 31, 32, 0.8);
+    cursor: default;
+}
+.sidebar ul li a.selected {
+    color: #3187e1;
+}
+
+.main {
+    width: 80%;
+    height: calc(100% - 37px);
+    float left;
+    overflow:scroll;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal {
+    position: absolute; 
+    top: 100px;
+    left: 423px;
+    background:#f6f6f6;
+    box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.15), 0 -0.5px 0 rgba(0, 0, 0, 0.15), 0.5px 0 0 rgba(0, 0, 0, 0.15), -0.5px 0 0 rgba(0, 0, 0, 0.15), 0 4px 7px rgba(0,0,0,0.15), 0px 0px 0px 1000px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    padding: 20px;
+    z-index: 2;
+}
+
+.modal h1 {
+    color: rgba(35, 31, 32, 0.8);
+    margin: 0;
+}
+
+.modal p {
+    margin: 20px 0 0 0;
+}
+
+.modal label {
+    color: rgba(35, 31, 32, 0.8);
+    padding-left: 2px;
+    display:block;
+    margin: 10px 0 0 0;
+    font-size:13px;
+}
+
+.modal input, .modal textarea {
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,0.05), 0 1px 0 rgba(0,0,0,0.05);
+    color: #000;
+    width: 390px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.modal textarea {
+    height: 70px;
+    padding: 5px;
+}
+
+.modal textarea:focus {
+    outline: 0;
+}
+
+.card {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    color: rgba(35, 31, 32, 0.8);
+}
+
+.card > div {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid rgba(221, 221, 221, 0.6);
+    border-radius: 3px;
+    background-color: #fafafa;
+    position: relative;
+}
+
+.card > div p {
+    text-align: center;
+}
+
+.card button, .card .btn {
+    position: absolute;
+    right: 0px;
+    bottom: 12px;
+    visibility: hidden;
+}
+
+.card div:hover button, .card div:hover .btn {
+    visibility: visible;
+    cursor: default;
+}
+
+.search {
+    float:right;
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 250px;
+    height: 22px;
+    border: 1px solid transparent;
+    box-shadow: 0 0.5px 0 rgba(0,0,0,0.15), 0 -0.5px 0 rgba(0,0,0,0.15), 0.5px 0 0 rgba(0,0,0,0.15), -0.5px 0 0 rgba(0,0,0,0.15);
+    _line-height: 22px;
+    _font-weight: 400;
+    background: #ffffff;
+    color: #231f20;
+    border-radius: 3px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.study-modal {
+    width: 430px;
+}
+
+.no-cards,
+.study-card .front div:first-child, 
+.study-card .back div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+}
+
+.study-card .back div:first-child {
+    height: 125px;
+}
+
+
+.study-card .front .btn,
+.study-card .front button {
+    float: right;
+}
+.study-card .front .btn,
+.study-card .back .btn,
+.study-card .front button, 
+.study-card .back button {
+    margin: 0 5px 0 5px;
+}
+
+.study-card .back p {
+    text-align: center;
+    color: rgba(35, 31, 32, 0.8);
+}
+
+.study-card .hide {
+    display: none;
+}
+
+.close {
+    font-size: 40px;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    margin: 0;
+    color: rgb(35, 31, 32);
+    cursor: default;
+    box-shadow: none;
+}
