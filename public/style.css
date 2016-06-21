@@ -104,7 +104,7 @@ button.delete {
 .main {
     width: 80%;
     height: calc(100% - 37px);
-    float left;
+    float: left;
     overflow:scroll;
     padding: 20px;
     box-sizing: border-box;
