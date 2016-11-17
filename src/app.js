@@ -21,7 +21,6 @@ const store = createStore(combineReducers(reducers), applyMiddleware(thunkMiddle
 const history = syncHistoryWithStore(browserHistory, store);
 
 function run () {
-  let state = store.getState();
   ReactDOM.render((<Provider store={store}>
     <Router history={history}>
       <Route path='/' component={App}>
@@ -53,7 +52,6 @@ function save() {
 
 function init () {
   run();
-  store.subscribe(run);
   store.subscribe(save);
   store.dispatch(fetchData());
 }
