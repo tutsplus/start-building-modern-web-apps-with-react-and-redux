@@ -1,4 +1,4 @@
-# [Start Building Modern Web Apps With React and Redux][published url]
+# [Modern Web Apps With React and Redux][published url]
 ## Instructor: [Andrew Burgess][instructor url]
 
 
@@ -16,9 +16,9 @@ This repository contains the application that we built during the course. Use th
 
 ------
 
-These are source files for the Tuts+ course: [Start Building Modern Web Apps With React and Redux][published url]
+These are source files for the Tuts+ course: [Modern Web Apps With React and Redux][published url]
 
 Available on [Tuts+](https://tutsplus.com). Teaching skills to millions worldwide.
 
-[published url]: https://code.tutsplus.com/courses/start-building-modern-web-apps-with-react-and-redux
+[published url]: https://code.tutsplus.com/courses/modern-web-apps-with-react-and-redux
 [instructor url]: https://tutsplus.com/authors/andrew-burgess
